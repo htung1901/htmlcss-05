@@ -20,7 +20,7 @@ a {
 
 .container {
   width: 1170px;
-  max-width: calc(1170px - 24px);
+  max-width: calc(100% - 24px);
   margin: 0 auto;
 }
 
@@ -39,6 +39,35 @@ a {
 
 .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
+}
+
+.label {
+  position: relative;
+  margin-left: 30px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #696d77;
+}
+
+.label::before {
+  position: absolute;
+  top: 13px;
+  left: -30px;
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: #696d77;
+}
+
+.section-heading {
+}
+
+.section-desc {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #696d76;
 }
 
 /* Navigation bar */
@@ -77,7 +106,6 @@ a {
   font-weight: 600;
   line-height: 1.75;
   color: #212832;
-  
 }
 
 .nav__item-active::after {
@@ -104,4 +132,318 @@ a {
   font-weight: 600;
   line-height: 1.75;
   color: #212832;
+}
+
+/* Hero */
+.hero {
+  margin-top: 64px;
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 160px;
+}
+
+.hero__heading {
+  margin-top: 12px;
+  width: 500px;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #212832;
+}
+
+.word-highlight-heading {
+  color: #7264d6;
+}
+
+.hero__desc {
+  width: 540px;
+}
+
+.hero__email-form {
+  position: relative;
+}
+
+.hero__email-form {
+  margin-top: 40px;
+}
+
+.hero__email-input {
+  width: 540px;
+  height: 74px;
+  padding: 23px 0 23px 23px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+  border: none;
+  outline: none;
+}
+
+.hero__email-input,
+.hero__email-input::placeholder {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #696d76;
+}
+
+.hero__email-submit-button {
+  --height: 58px;
+  
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 149px;
+  border-radius: 8px;
+  background: #7264d6;
+  border: none;
+}
+
+.hero__notice {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.714;
+  color: #696d76;
+}
+
+.hero__right {
+  position: relative;
+  display: flex;
+  column-gap: 44px;
+}
+
+.hero__phone {
+  padding: 52px 12px 2px;
+  border-radius: 40px;
+  border: 12px solid #212832;
+  background: #fff;
+}
+
+.hero__phone-dynamic-island {
+  width: 144px;
+  height: 36px;
+  margin: -63px auto 16px;
+  border-radius: 0px 0px 18px 18px;
+  background: #3c2f60;
+}
+
+.bank-card {
+  position: relative;
+  padding: 16px 65px 16px 16px;
+  border-radius: 20px;
+  background: linear-gradient(#8679e4 100%, #7264d6 100%);
+  overflow: hidden;
+}
+
+.bank-card__title,
+.bank-card__money,
+.bank-card__info-first-row,
+.bank-card__info-second-row {
+  --card-bank-font-size: 1.4rem;
+
+  position: relative;
+  z-index: 99;
+  font-size: var(--card-bank-font-size);
+  color: #fff;
+  line-height: normal;
+}
+
+.bank-card__money {
+  --card-bank-font-size: 2.2rem;
+
+  margin-top: 2px;
+  font-weight: 700;
+}
+
+.bank-card__info {
+  display: grid;
+  grid-template-columns: 35.36% 65.7265%;
+  column-gap: 12px;
+  row-gap: 5px;
+  margin-top: 32px;
+}
+
+.bank-card__info-first-row {
+  --card-bank-font-size: 1rem;
+}
+
+.bank-card__info-second-row {
+  --card-bank-font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.bank-card__decor-img {
+  display: inline-block;
+  position: absolute;
+}
+
+.bank-card__decor-img:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.bank-card__decor-img:nth-child(2) {
+  bottom: 0;
+  right: 0;
+}
+
+.bank-card__decor-img:nth-child(3) {
+  top: 16px;
+  right: 16px;
+}
+
+.hero__phone-list {
+  margin-top: 24px;
+}
+
+.hero__phone-list-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.hero__phone-list-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: normal;
+  color: #31456a;
+}
+
+.hero__phone-item {
+  display: grid;
+  grid-template-columns: 16% 44% auto;
+  align-items: center;
+  column-gap: 14px;
+  margin-bottom: 28px;
+}
+
+.hero__phone-item-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #edf8fc;
+}
+
+.hero__phone-item-icons-2 {
+  background: #fbf0f0;
+}
+
+.hero__phone-item-icons-3 {
+  background: #edf6f4;
+}
+
+.hero__phone-item-icons-4 {
+  background: #f1f0fb;
+}
+
+.hero__phone-item-heading,
+.hero__phone-item-money {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #212832;
+}
+
+.hero__phone-item-desc,
+.hero__phone-item-date {
+  margin-top: 6px;
+  font-size: 1rem;
+  line-height: 1;
+  color: #696d76;
+}
+
+.hero__phone-item-notification {
+  text-align: right;
+}
+
+.hero__decorate-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 127px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #da6464;
+}
+
+.hero__decorate-circle-percentage {
+  color: #fff;
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+
+.hero__decorate-circle-desc {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.hero__decorate-block {
+  position: absolute;
+}
+
+.decorate-block__deposite {
+  display: flex;
+  align-items: center;
+  top: 113px;
+  left: -100px;
+  width: 174px;
+  height: 46px;
+  padding: 14px 10px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.decorate-block__deposite-icon {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.decorate-block__desc {
+  margin-right: 19px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #31456a;
+}
+
+.decorate-block__money-amount {
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #4ab5e3;
+}
+
+.decorate-block__money {
+  right: 98px;
+  bottom: 61px;
+  display: flex;
+  align-items: center;
+  column-gap: 11px;
+  width: 124px;
+  height: 68px;
+  padding: 20px 15px 20px 14px;
+  border-radius: 10px;
+  background: #439f90;
+}
+
+.decorate-block__money-amount {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+}
+
+.decorate-block__money-desc {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  line-height: 1;
+  color: #fff;
 }

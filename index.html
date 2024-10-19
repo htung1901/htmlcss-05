@@ -93,218 +93,255 @@
       rel="stylesheet"
     />
 
+    <!-- Grid CSS -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <title>Celo Bank</title>
   </head>
   <body style="height: 10000px">
-    <header>
-      <!-- Navigation bar -->
-      <nav class="nav">
-        <div class="container">
-          <div class="nav__inner">
-            <!-- Logo -->
-            <a class="nav__logo" href="#!"
-              ><img src="./assets/img/Logo.svg" alt="" class="logo"
-            /></a>
-            <!-- Navigation -->
-            <ul class="nav__list">
-              <li>
-                <a href="#!" class="nav__item nav__item-active">Home</a>
-              </li>
-              <li>
-                <a href="#!" class="nav__item">Products</a>
-              </li>
-              <li>
-                <a href="#!" class="nav__item">Features</a>
-              </li>
-              <li>
-                <a href="#!" class="nav__item">Blog</a>
-              </li>
-            </ul>
-            <!-- Action -->
-            <div class="nav-action">
-              <a href="#!" class="nav-action__log-in">Log in</a>
-              <a href="#!" class="btn nav-action__sign-up">Sign up</a>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <!-- Navigation bar -->
+        <nav class="nav">
+          <!-- Logo -->
+          <a class="header__logo" href="#!"
+            ><img src="./assets/img/Logo.svg" alt="" class="logo"
+          /></a>
+          <ul class="nav__list">
+            <li>
+              <a href="#!" class="nav__item nav__item-active">Home</a>
+            </li>
+            <li>
+              <a href="#!" class="nav__item">Products</a>
+            </li>
+            <li>
+              <a href="#!" class="nav__item">Features</a>
+            </li>
+            <li>
+              <a href="#!" class="nav__item">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Action -->
+        <div class="nav-action">
+          <a href="#!" class="nav-action__log-in">Log in</a>
+          <a href="#!" class="btn nav-action__sign-up">Sign up</a>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <section class="hero__left">
+              <p class="label">Digital Smart Wallet</p>
+              <h1 class="hero__heading">
+                Digital <span class="word-highlight-heading">Payment</span> For
+                Everyone.
+              </h1>
+              <p class="section-desc hero__desc">
+                We bring together eveything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+              <form action="" class="hero__email-form">
+                <input
+                  class="hero__email-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email address"
+                  maxlength="35"
+                />
+                <button class="btn hero__email-submit-button" type="submit">
+                  Get Started
+                </button>
+              </form>
+              <p class="hero__notice">
+                *We’ll respect the inbox and never share your email.
+              </p>
+            </section>
+          </div>
+          <div class="col-lg-5 col-md-6 offset-lg-1 col-12">
+            <div class="hero__right">
+              <!-- Hero phone -->
+              <div class="hero__phone">
+                <div class="hero__phone-dynamic-island"></div>
+                <div class="bank-card">
+                  <p class="bank-card__title">Main Balance</p>
+                  <p class="bank-card__money">$78,355.17</p>
+                  <div class="bank-card__info">
+                    <p class="bank-card__info-first-row">VALID THUR</p>
+                    <p class="bank-card__info-first-row">CARD HOLDER</p>
+                    <p class="bank-card__info-second-row">08/22</p>
+                    <p class="bank-card__info-second-row">Md Moshqur Alam</p>
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/img/bank-card-decor-1.svg"
+                      alt=""
+                      class="bank-card__decor-img"
+                    />
+                    <img
+                      src="./assets/img/bank-card-decor-2.svg"
+                      alt=""
+                      class="bank-card__decor-img"
+                    />
+                    <img
+                      src="./assets/img/bank-card-decor-3.svg"
+                      alt=""
+                      class="bank-card__decor-img"
+                    />
+                  </div>
+                </div>
+                <ul class="hero__phone-list">
+                  <li class="hero__phone-list-top">
+                    <h3 class="hero__phone-list-heading">Transections</h3>
+                    <img
+                      src="./assets/img/hero-phone-item-icon-0.svg"
+                      alt=""
+                      class="hero__phone-list-icon"
+                    />
+                  </li>
+                  <!-- Hero phone item 1 -->
+                  <li class="hero__phone-item">
+                    <div class="hero__phone-item-icons">
+                      <img
+                        src="./assets/img/hero-phone-item-icon-1.svg"
+                        alt=""
+                        class="hero__phone-item-icon"
+                      />
+                    </div>
+                    <div class="hero__phone-item-title">
+                      <h3 class="hero__phone-item-heading">Received Money</h3>
+                      <p class="hero__phone-item-desc">email@gmail.com</p>
+                    </div>
+                    <div class="hero__phone-item-notification">
+                      <p class="hero__phone-item-money">+$1,600</p>
+                      <p class="hero__phone-item-date">Sep 23</p>
+                    </div>
+                  </li>
+                  <!-- Hero phone item 2 -->
+                  <li class="hero__phone-item">
+                    <div
+                      class="hero__phone-item-icons hero__phone-item-icons-2"
+                    >
+                      <img
+                        src="./assets/img/hero-phone-item-icon-2.svg"
+                        alt=""
+                        class="hero__phone-item-icon"
+                      />
+                    </div>
+                    <div class="hero__phone-item-title">
+                      <h3 class="hero__phone-item-heading">Send Money</h3>
+                      <p class="hero__phone-item-desc">Airbnb Payment</p>
+                    </div>
+                    <div class="hero__phone-item-notification">
+                      <p class="hero__phone-item-money">- $600</p>
+                      <p class="hero__phone-item-date">Sep 23</p>
+                    </div>
+                  </li>
+                  <!-- Hero phone item 3 -->
+                  <li class="hero__phone-item">
+                    <div
+                      class="hero__phone-item-icons hero__phone-item-icons-3"
+                    >
+                      <img
+                        src="./assets/img/hero-phone-item-icon-3.svg"
+                        alt=""
+                        class="hero__phone-item-icon"
+                      />
+                    </div>
+                    <div class="hero__phone-item-title">
+                      <h3 class="hero__phone-item-heading">Received Money</h3>
+                      <p class="hero__phone-item-desc">Upwork Earning</p>
+                    </div>
+                    <div class="hero__phone-item-notification">
+                      <p class="hero__phone-item-money">+$1,600</p>
+                      <p class="hero__phone-item-date">Sep 23</p>
+                    </div>
+                  </li>
+                  <!-- Hero phone item 4 -->
+                  <li class="hero__phone-item">
+                    <div
+                      class="hero__phone-item-icons hero__phone-item-icons-4"
+                    >
+                      <img
+                        src="./assets/img/hero-phone-item-icon-4.svg"
+                        alt=""
+                        class="hero__phone-item-icon"
+                      />
+                    </div>
+                    <div class="hero__phone-item-title">
+                      <h3 class="hero__phone-item-heading">Pay Bill</h3>
+                      <p class="hero__phone-item-desc">Electricity Bill</p>
+                    </div>
+                    <div class="hero__phone-item-notification">
+                      <p class="hero__phone-item-money">- $600</p>
+                      <p class="hero__phone-item-date">Sep 23</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="hero__decorate-circle">
+                <p class="hero__decorate-circle-percentage">0%</p>
+                <p class="hero__decorate-circle-desc">Interest</p>
+              </div>
+              <div class="hero__decorate-block decorate-block__deposite">
+                <img
+                  src="./assets/img/hero-download-icon.svg"
+                  alt=""
+                  class="decorate-block__deposite-icon"
+                />
+                <p class="decorate-block__desc">Deposite</p>
+                <p class="decorate-block__money-amount">$32000</p>
+              </div>
+              <div class="hero__decorate-block decorate-block__money">
+                <img
+                  src="./assets/img/hero-money-shield.svg"
+                  alt=""
+                  class="decorate-block__money-icon"
+                />
+                <div class="decorate-block__money-title">
+                  <p class="decorate-block__money-amount">$1.310</p>
+                  <div class="decorate-block__money-desc">SECURED FUNDS</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </section>
 
-    <!-- Hero -->
-    <div class="hero">
-      <div class="container">
-        <div class="hero__inner">
-          <section class="hero__left">
-            <p class="label">Digital Smart Wallet</p>
-            <h1 class="hero__heading">
-              Digital <span class="word-highlight-heading">Payment</span> For
-              Everyone.
-            </h1>
-            <p class="section-desc hero__desc">
-              We bring together eveything that’s required to build websites and
-              apps that accept payments and send payouts globally. We are the
-              best platform.
-            </p>
-            <form action="" class="hero__email-form">
-              <input
-                class="hero__email-input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your email address"
-                maxlength="35"
-              />
-              <button class="btn hero__email-submit-button" type="submit">
-                Get Started
-              </button>
-            </form>
-            <p class="hero__notice">
-              *We’ll respect the inbox and never share your email.
-            </p>
-          </section>
-          <div class="hero__right">
-            <!-- Hero phone -->
-            <div class="hero__phone">
-              <div class="hero__phone-dynamic-island"></div>
-              <div class="bank-card">
-                <p class="bank-card__title">Main Balance</p>
-                <p class="bank-card__money">$78,355.17</p>
-                <div class="bank-card__info">
-                  <p class="bank-card__info-first-row">VALID THUR</p>
-                  <p class="bank-card__info-first-row">CARD HOLDER</p>
-                  <p class="bank-card__info-second-row">08/22</p>
-                  <p class="bank-card__info-second-row">Md Moshqur Alam</p>
+      <!-- Work -->
+      <section class="work">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="work__media">
+              <figure class="work__media-img">
+                <img src="./assets/img/work-img.png" alt="">
+              </figure>
+              <div class="work__media-decorators">
+                <img src="./assets/img/work-decor-01.svg" alt="" class="work__decor">
+                <div class="work__decor">
+                  <img src="./assets/img/work-decor-02.svg" alt="" class="work__decor-success">
+                  <div class="work__decor-title">
+                    <h4 class="work__decor-heading">Congratulations</h4>
+                    <p class="work__decor-desc">Your account activated</p>
+                  </div>
                 </div>
-                <div>
-                  <img
-                    src="./assets/img/bank-card-decor-1.svg"
-                    alt=""
-                    class="bank-card__decor-img"
-                  />
-                  <img
-                    src="./assets/img/bank-card-decor-2.svg"
-                    alt=""
-                    class="bank-card__decor-img"
-                  />
-                  <img
-                    src="./assets/img/bank-card-decor-3.svg"
-                    alt=""
-                    class="bank-card__decor-img"
-                  />
-                </div>
-              </div>
-              <ul class="hero__phone-list">
-                <li class="hero__phone-list-top">
-                  <h3 class="hero__phone-list-heading">Transections</h3>
-                  <img
-                    src="./assets/img/hero-phone-item-icon-0.svg"
-                    alt=""
-                    class="hero__phone-list-icon"
-                  />
-                </li>
-
-                <!-- Hero phone item 1 -->
-                <li class="hero__phone-item">
-                  <div class="hero__phone-item-icons">
-                    <img
-                      src="./assets/img/hero-phone-item-icon-1.svg"
-                      alt=""
-                      class="hero__phone-item-icon"
-                    />
-                  </div>
-                  <div class="hero__phone-item-title">
-                    <h3 class="hero__phone-item-heading">Received Money</h3>
-                    <p class="hero__phone-item-desc">email@gmail.com</p>
-                  </div>
-                  <div class="hero__phone-item-notification">
-                    <p class="hero__phone-item-money">+$1,600</p>
-                    <p class="hero__phone-item-date">Sep 23</p>
-                  </div>
-                </li>
-
-                <!-- Hero phone item 2 -->
-                <li class="hero__phone-item">
-                  <div class="hero__phone-item-icons hero__phone-item-icons-2">
-                    <img
-                      src="./assets/img/hero-phone-item-icon-2.svg"
-                      alt=""
-                      class="hero__phone-item-icon"
-                    />
-                  </div>
-                  <div class="hero__phone-item-title">
-                    <h3 class="hero__phone-item-heading">Send Money</h3>
-                    <p class="hero__phone-item-desc">Airbnb Payment</p>
-                  </div>
-                  <div class="hero__phone-item-notification">
-                    <p class="hero__phone-item-money">- $600</p>
-                    <p class="hero__phone-item-date">Sep 23</p>
-                  </div>
-                </li>
-
-                <!-- Hero phone item 3 -->
-                <li class="hero__phone-item">
-                  <div class="hero__phone-item-icons hero__phone-item-icons-3">
-                    <img
-                      src="./assets/img/hero-phone-item-icon-3.svg"
-                      alt=""
-                      class="hero__phone-item-icon"
-                    />
-                  </div>
-                  <div class="hero__phone-item-title">
-                    <h3 class="hero__phone-item-heading">Received Money</h3>
-                    <p class="hero__phone-item-desc">Upwork Earning</p>
-                  </div>
-                  <div class="hero__phone-item-notification">
-                    <p class="hero__phone-item-money">+$1,600</p>
-                    <p class="hero__phone-item-date">Sep 23</p>
-                  </div>
-                </li>
-
-                <!-- Hero phone item 4 -->
-                <li class="hero__phone-item">
-                  <div class="hero__phone-item-icons hero__phone-item-icons-4">
-                    <img
-                      src="./assets/img/hero-phone-item-icon-4.svg"
-                      alt=""
-                      class="hero__phone-item-icon"
-                    />
-                  </div>
-                  <div class="hero__phone-item-title">
-                    <h3 class="hero__phone-item-heading">Pay Bill</h3>
-                    <p class="hero__phone-item-desc">Electricity Bill</p>
-                  </div>
-                  <div class="hero__phone-item-notification">
-                    <p class="hero__phone-item-money">- $600</p>
-                    <p class="hero__phone-item-date">Sep 23</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="hero__decorate-circle">
-              <p class="hero__decorate-circle-percentage">0%</p>
-              <p class="hero__decorate-circle-desc">Interest</p>
-            </div>
-
-            <div class="hero__decorate-block decorate-block__deposite">
-              <img src="./assets/img/hero-download-icon.svg" alt="" class="decorate-block__deposite-icon" />
-              <p class="decorate-block__desc">Deposite</p>
-              <p class="decorate-block__money-amount">$32000</p>
-            </div>
-
-            <div class="hero__decorate-block decorate-block__money">
-              <img src="./assets/img/hero-money-shield.svg" alt="" class="decorate-block__money-icon" />
-              <div class="decorate-block__money-title">
-                <p class="decorate-block__money-amount">$1.310</p>
-                <div class="decorate-block__money-desc">SECURED FUNDS</div>
               </div>
             </div>
           </div>
+
+          <div class="col-lg-5 offset-lg-1">
+            <div class="work__title"></div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>

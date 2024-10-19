@@ -1,7 +1,7 @@
-* {
+*, 
+::before, 
+::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 html {
@@ -19,9 +19,7 @@ a {
 }
 
 .container {
-  width: 1170px;
-  max-width: calc(100% - 24px);
-  margin: 0 auto;
+  padding: 0;
 }
 
 .btn {
@@ -71,27 +69,29 @@ a {
 }
 
 /* Navigation bar */
-.nav {
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 24px;
   padding-top: 24px;
   padding-bottom: 12px;
 }
 
-.nav__inner {
+.header__logo {
   display: flex;
   align-items: center;
 }
 
-.nav__logo {
+.nav {
   display: flex;
   align-items: center;
+  column-gap: 70px;
 }
 
 .nav__list {
   display: flex;
   column-gap: 48px;
-  margin-left: 70px;
-  margin-right: 454px;
 }
 
 .nav__item {
@@ -137,13 +137,6 @@ a {
 /* Hero */
 .hero {
   margin-top: 64px;
-}
-
-.hero__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 160px;
 }
 
 .hero__heading {
@@ -193,7 +186,7 @@ a {
   
   position: absolute;
   top: 8px;
-  right: 8px;
+  left: 383px;
   width: 149px;
   border-radius: 8px;
   background: #7264d6;
@@ -212,6 +205,7 @@ a {
   position: relative;
   display: flex;
   column-gap: 44px;
+  user-select: none;
 }
 
 .hero__phone {
@@ -447,3 +441,6 @@ a {
   line-height: 1;
   color: #fff;
 }
+
+
+

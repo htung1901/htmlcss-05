@@ -1,5 +1,5 @@
-*, 
-::before, 
+*,
+::before,
 ::after {
   box-sizing: border-box;
 }
@@ -43,6 +43,7 @@ a {
 .label {
   position: relative;
   margin-left: 30px;
+  margin-bottom: 12px;
   font-size: 1.6rem;
   line-height: 1.75;
   color: #696d77;
@@ -59,12 +60,32 @@ a {
 }
 
 .section-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #212832;
 }
 
 .section-desc {
   margin-top: 20px;
   font-size: 18px;
   line-height: 1.67;
+  color: #696d76;
+}
+
+.decor-heading {
+  font-family: Inter;
+  font-size: 1.4rem;
+  line-height: normal;
+  font-weight: 600;
+  color: #212832;
+}
+
+.decor-desc {
+  margin-top: 5px;
+  font-family: Inter;
+  font-size: 1.2rem;
+  line-height: normal;
   color: #696d76;
 }
 
@@ -139,8 +160,11 @@ a {
   margin-top: 64px;
 }
 
+.hero-row {
+  align-items: center;
+}
+
 .hero__heading {
-  margin-top: 12px;
   width: 500px;
   font-size: 6rem;
   font-weight: 700;
@@ -183,7 +207,7 @@ a {
 
 .hero__email-submit-button {
   --height: 58px;
-  
+
   position: absolute;
   top: 8px;
   left: 383px;
@@ -442,5 +466,70 @@ a {
   color: #fff;
 }
 
+/* Work */
+.work {
+  margin-top: 160px;
+}
 
+.row-work {
+  align-items: center;
+}
 
+.work__media {
+  position: relative;
+}
+
+.work__media-img {
+  display: block;
+  width: 456px;
+  height: 619px;
+}
+
+.work__media-decor-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.work__decor {
+  position: absolute;
+  display: block;
+}
+
+.work__decor:nth-child(1) {
+  top: 76px;
+  right: 55px;
+  z-index: 99;
+}
+
+.work__decor:nth-child(2) {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  right: -100px;
+  bottom: 96px;
+  padding: 15px 30px 15px 15px;
+  border-radius: 8px;
+  background: #fffdfa;
+  box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.work__list {
+  margin-top: 70px;
+}
+
+.work__list-heading {
+  margin-top: 30px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.455;
+  color: #212832;
+}
+
+.work__list-desc {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #696d76;
+}

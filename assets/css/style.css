@@ -89,6 +89,30 @@ a {
   color: #696d76;
 }
 
+.section-list {
+  margin: 28px 0 38px;
+}
+
+.section-item {
+  position: relative;
+  margin: 18px 0 0 24px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  color: #212832;
+}
+
+.section-item::before {
+  position: absolute;
+  top: 9px;
+  left: -24px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7264d6;
+}
+
 /* Navigation bar */
 .header {
   display: flex;
@@ -543,30 +567,6 @@ a {
   align-items: center;
 }
 
-.payment__list {
-  margin: 28px 0 38px;
-}
-
-.payment__item {
-  position: relative;
-  margin: 18px 0 0 24px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 1.67;
-  color: #212832;
-}
-
-.payment__item::before {
-  position: absolute;
-  top: 9px;
-  left: -24px;
-  content: "";
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #7264d6;
-}
-
 .payment__media {
   position: relative;
 }
@@ -656,4 +656,80 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   color: #fff;
+}
+
+/* Transfer */
+.transfer {
+  margin-top: 160px;
+}
+
+.transfer-row {
+  align-items: center;
+}
+
+.transfer__media {
+  position: relative;
+}
+
+.transfer__media-images {
+  position: relative;
+}
+
+.transfer__media-img {
+  display: block;
+  margin-left: 29px;
+  width: 413px;
+  height: 600px;
+}
+
+.transfer__media-img-decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+}
+
+.payment-method {
+  position: absolute;
+  bottom: 57px;
+  right: -74px;
+  z-index: 99;
+  width: 281px;
+  height: 220px;
+  padding: 28px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 44px 48px 0px #0000001a;
+}
+
+.payment-method__desc {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  color: #212832;
+}
+
+.payment-method__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.payment-method__img {
+  display: block;
+}
+
+.payment-method__decor {
+  position: absolute;
+  top: -35px;
+  right: -26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #7264D6;
 }

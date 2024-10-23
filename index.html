@@ -656,26 +656,107 @@
             </div>
           </div>
         </section>
+        <section class="blog">
+          <div class="row">
+            <div class="col">
+              <div class="blog__top">
+                <div class="blog__title">
+                  <p class="label">Our Blog</p>
+                  <h2 class="section-heading">Get The Updates</h2>
+                  <p class="section-desc blog__desc">
+                    Read our blog for the regular updates about us and about our
+                    online banking services that may inspire you
+                  </p>
+                </div>
+                <a href="#!" class="btn blog__btn">Read All</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-cols-md-2 row-cols-1">
+            <!-- Blog item 1 -->
+            <div class="col">
+              <a href="#!" class="blog__item">
+                <figure class="blog__img-wrap">
+                  <img src="./assets/img/blog-img-01.jpg" alt="" class="blog__img" />
+                </figure>
+                <div class="blog__item-title">
+                  <p class="blog__date">July 03, 2022</p>
+                  <h3 class="blog__heading">
+                    Online bank is the best and secure way to save in the
+                    future...
+                  </h3>
+                  <p class="blog__read">Read Blog</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Blog item 2 -->
+            <div class="col">
+              <a href="#!" class="blog__item">
+                <figure class="blog__img-wrap">
+                  <img src="./assets/img/blog-img-02.jpg" alt="" class="blog__img" />
+                </figure>
+                <div class="blog__item-title">
+                  <p class="blog__date">July 03, 2022</p>
+                  <h3 class="blog__heading">
+                    Why do you need to open a bank account in online..
+                  </h3>
+                  <p class="blog__read">Read Blog</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Blog item 3 -->
+            <div class="col">
+              <a href="#!" class="blog__item">
+                <figure class="blog__img-wrap">
+                  <img src="./assets/img/blog-img-03.jpg" alt="" class="blog__img" />
+                </figure>
+                <div class="blog__item-title">
+                  <p class="blog__date">July 03, 2022</p>
+                  <h3 class="blog__heading">
+                    The benefits that we get from credit card at anytime...
+                  </h3>
+                  <p class="blog__read">Read Blog</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Blog item 4 -->
+            <div class="col">
+              <a href="#!" class="blog__item">
+                <figure class="blog__img-wrap">
+                  <img src="./assets/img/blog-img-04.jpg" alt="" class="blog__img" />
+                </figure>
+                <div class="blog__item-title">
+                  <p class="blog__date">July 03, 2022</p>
+                  <h3 class="blog__heading">
+                    How to manage your money in online in this busy days...
+                  </h3>
+                  <p class="blog__read">Read Blog</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
 
     <script>
-      const $ = document.querySelector.bind(document)
-      const $$ = document.querySelectorAll.bind(document)
+      const $ = document.querySelector.bind(document);
+      const $$ = document.querySelectorAll.bind(document);
 
-      const feedBacks = $$('.client__feedback')
-      const sliders = $$('.slider')
+      const feedBacks = $$(".client__feedback");
+      const sliders = $$(".slider");
 
       sliders.forEach((slider, index) => {
-        const feedBack = feedBacks[index]
+        const feedBack = feedBacks[index];
         slider.onclick = function () {
-          $('.slider-active').classList.remove('slider-active')
-          this.classList.add('slider-active')
-        }
-      })
-
-      
-
+          $(".slider-active").classList.remove("slider-active");
+          this.classList.add("slider-active");
+        };
+      });
     </script>
   </body>
 </html>

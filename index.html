@@ -570,7 +570,7 @@
           <div class="row row-cols-md-2 row-cols-1">
             <!-- Feedback 1  -->
             <div class="col">
-              <div class="client__feedback">
+              <div class="client__feedback feedback-active">
                 <svg
                   class="client__feedback-bg"
                   width="570"
@@ -608,7 +608,7 @@
             </div>
             <!-- Feedback 2  -->
             <div class="col">
-              <div class="client__feedback">
+              <div class="client__feedback feedback-active">
                 <svg
                   class="client__feedback-bg"
                   width="570"
@@ -658,5 +658,24 @@
         </section>
       </main>
     </div>
+
+    <script>
+      const $ = document.querySelector.bind(document)
+      const $$ = document.querySelectorAll.bind(document)
+
+      const feedBacks = $$('.client__feedback')
+      const sliders = $$('.slider')
+
+      sliders.forEach((slider, index) => {
+        const feedBack = feedBacks[index]
+        slider.onclick = function () {
+          $('.slider-active').classList.remove('slider-active')
+          this.classList.add('slider-active')
+        }
+      })
+
+      
+
+    </script>
   </body>
 </html>

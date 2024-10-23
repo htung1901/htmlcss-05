@@ -753,6 +753,7 @@ a {
 
 .client__feedback {
   position: relative;
+  display: none;
 }
 
 .client__feedback:hover .client__feedback-bg {
@@ -837,4 +838,8 @@ a {
 
 .slider-active {
   background: #7264D6;
+}
+
+.feedback-active {
+  display: block;
 }
